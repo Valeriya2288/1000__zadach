@@ -1175,6 +1175,42 @@ Console.WriteLine($"Полных метров в расстоянии {m}");
 // }
 // System.Console.WriteLine(max);
 
+// Найти третий  нечетный элемент с начала и второй нечетный элемент с конца и поменять местами
+
+// int[] mas = new int[30];
+// Random gen = new Random();
+// int start = 0;
+// int stop = 29;
+// int k = 0;
+// for(int i = 0; i < 30; i++)
+// {
+//     if(mas[i] % 2 != 0)
+//     {
+//         k++;
+//         if(k==3){
+ 
+        
+//             start = i;
+//             break;// команда прерывает цикл
+//         }
+//     }
+
+// }
+// k = 0;
+// for(int i = 29; i >= 0; i--)
+// {
+//     if(mas[i] % 2 != 0)
+//     {
+//         stop = i;
+//         break;// команда прерывает цикл
+//     }
+
+// }
+// int t = mas[start];
+// mas[start] = mas[stop];
+// mas[stop] = t;
+// System.Console.WriteLine("Hello World");
+
 // Найти первый нечетный элемент с начала и первый нечетный элемент с конца и поменять местами
 
 // int[] mas = new int[30];
@@ -1202,10 +1238,54 @@ Console.WriteLine($"Полных метров в расстоянии {m}");
 // int t = mas[start];
 // mas[start] = mas[stop];
 // mas[stop] = t;
-// System.Console.WriteLine();
-//uotg
+// System.Console.WriteLine("Hello World");
+
+
+// Переписать из одного массива в другой только четные числа
+
+// int[] masS = new int[10];
+// int[] mas = new int[10];
+// Random gen = new Random();
+// int j = 0;
+// for(int i = 0; i < 10; i++)
+// {
+//     mas[i] = gen.Next();
+//     if(mas[i] % 2 == 0)
+//     {
+//         masS[j] = mas[i];
+//         j++;
+        
+//     }
+// }
+// for(int k = 0; k < j; k++)
+// {
+//     System.Console.WriteLine(masS[k]);
+//
+
+
+//Array18. Дан массив A ненулевых целых чисел размера 10. Вывести значение
+//первого из тех его элементов AK, которые удовлетворяют неравенству
+//AK < A10. Если таких элементов нет, то вывести 0
+
+int[]mas = new int[10];
+Random gen = new Random();
+
+
+for( int i = 0; i < 10; i++)
+{ 
+    mas[i] = gen.Next(1,10);
+   System.Console.Write(mas[i]+" ");   
+}
+for( int i = 0; i < 10; i++)
+{ 
+ if(mas[i] < mas[9])
+    
+    {
+        System.Console.WriteLine("\n"+mas[i]);
+        break;
+    }
+}
 
 
 
 
-//Hello world!
